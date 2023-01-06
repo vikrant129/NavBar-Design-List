@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <style>
+           body{
+        font-family: var(--font-style);
+        background-color: #1c2A44;
+    }
+        /* first NavBar Css */
+     .one{
+        background-color: blue;
+    border-radius:25px;
+    background-image:linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+    }
+    .one:hover{
+        background-color: blue;
+    border-radius:25px;
+    background-image:radial-gradient(red,orange);
+    }
+    .imgg{
+        margin-left: 10px;
+        border-radius: 50%;
+    }
+    .extra{
+        border: 1px solid black;
+        width: 100px;
+        height: 100px;
+        padding-left: 10px;
+        margin: 20%;
+    }
+    .onea {
+        margin-left: 3%;
+    }
+      /* first NavBar Css End */
+
+
+       /* 2 NavBar Css Start */
+      .two{
+
+        margin: 1%;
+  
+        display: flex;
+     
+       
+        padding: 15px 0;
+        border-radius:25px;
+        border:0.1px solid #18181B;
+        background-color: #18181B;
+        box-shadow: 0 4px 8px 0 #00FFFF,0 6px rgba(0,0,0,0.19);
+    
+     
+
+    }
+    .twoa{
+        margin-left: 20%;
+        font-size: 100%;
+    }
+   /* 2 NavBar Css End */
+
+      /* 3 NavBar Css Start */
+.three{
+    margin: 1%;
+  
+  display: flex;
+
+ 
+  padding: 15px 0;
+  border-radius:5px;
+  border:0.1px solid #18181B;
+  background-image:linear-gradient(to right, #8787f8,#01010f);
+
+
+}
+.threea{
+    margin-left:16%;
+}
+.threeb{
+    margin-left: 20%;
+}
+         /* 3 NavBar Css End */
+
+         /* 4  NavBar Css start */
+.four{
+    margin: 1%;
+   background-image: url("data:image/jpeg;base64,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");
+background-repeat:inherit;
+
+}
+.foura{
+    margin-left: 3%;
+}
+
+            /* 5  NavBar Css end*/
+ /* 4  NavBar Css start */
+.five{
+    margin: 1%;
+    background-color: #c4c4ee;
+    border-radius:50px 0px 50px 0px;
+}
+  /* 5  NavBar Css end*/
+  /* 6  NavBar Css Start*/
+
+  .six{
+    margin:1%;
+    background-image: radial-gradient( red,orange,yellow,green,blue);
+    border-radius:0px 0px 50px 50px;
+  }
+  .sixa{
+    margin-left: 23%;
+    font-size: 100%;
+ 
+  }
+    /* 6  NavBar Css end*/
+
+    </style>
+    
+    </head>
+      <body>
+     <div class="container">
+        <!-- navbar start -->
+        <nav class="one navbar navbar-expand-lg py-3 px-3 my-3">
+            <img class="imgg" src="https://i.pinimg.com/236x/0c/fd/a2/0cfda250d33a038d777ef363e6ced83c.jpg" alt="" width="30px" height="30px">
+            <div class="container-fluid" style="color:black ; font-size: large;">NavBar Design</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="onea collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#" style="color:black ;">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" style="color:black ;">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"  style="color:black ;">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" style="color:black ;">About</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+
+    
+
+          <nav class=" two navbar navbar-expand-lg py-3 px-3 my-5">
+            <img class="imgg" src="https://i.pinimg.com/236x/0c/fd/a2/0cfda250d33a038d777ef363e6ced83c.jpg" alt="" width="30px" height="30px">
+            <div class="container-fluid" style="color:antiquewhite ; font-size: larger;">NavBar Design</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="twoa collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#" style="color:antiquewhite ;">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" style="color:antiquewhite ;">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"  style="color:antiquewhite ;">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" style="color:antiquewhite ;">About</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+
+                </form>
+              </div>
+            </div>
+          </nav>
+
+
+
+          <nav class=" three navbar navbar-expand-lg py-3 px-3 my-5">
+            <img class="imgg" src="https://i.pinimg.com/236x/0c/fd/a2/0cfda250d33a038d777ef363e6ced83c.jpg" alt="" width="30px" height="30px">
+            <div class="container-fluid" style="color:antiquewhite ; font-size: larger;">NavBar Design</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="threea collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="threea d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+  
+                  </form>
+                <ul class="threeb navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#" style="color:antiquewhite ;">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" style="color:antiquewhite ;">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"  style="color:antiquewhite ;">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" style="color:antiquewhite ;">About</a>
+                  </li>
+                </ul>
+            
+              </div>
+            </div>
+          </nav>
+
+
+
+
+
+
+          <nav class="four navbar navbar-expand-lg py-3 px-3 my-5">
+            <img class="imgg" src="https://i.pinimg.com/236x/0c/fd/a2/0cfda250d33a038d777ef363e6ced83c.jpg" alt="" width="30px" height="30px">
+            <div class="container-fluid" style="color:black ; font-size: larger;">NavBar Design</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="foura collapse navbar-collapse" id="navbarSupportedContent">
+               
+                <ul class="foura navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#" style="color:black;">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" style="color:black ;">Link</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" style="color:black ;">Project</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" style="color:black ;">Contact Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" style="color:black ;">Images</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"  style="color:black ;">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" style="color:black;">About</a>
+                  </li>
+                </ul>
+                <form class=" d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button type="button" class="btn btn-success">Success</button>
+                  </form>
+              </div>
+            </div>
+          </nav>
+
+
+          <nav class="five navbar navbar-expand-lg  py-3 px-3 my-3">
+            <img class="imgg" src="https://i.pinimg.com/236x/0c/fd/a2/0cfda250d33a038d777ef363e6ced83c.jpg" alt="" width="30px" height="30px">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">NavBar Design</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown link
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+
+
+
+          <nav class="six navbar navbar-expand-lg  py-3 px-3 my-5">
+            <img class="imgg" src="https://i.pinimg.com/236x/0c/fd/a2/0cfda250d33a038d777ef363e6ced83c.jpg" alt="" width="30px" height="30px">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">NavBar Design</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class=" sixa collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown link
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+  </body>
+</html>
